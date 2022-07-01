@@ -1,0 +1,21 @@
+:root{
+    --main-color:;
+    --acento: ;
+    --white:  ;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 650px;
+    background-image: linear-gradient(120deg, #e490ac 0%, #fd9f8579 100%),url(");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+ }
