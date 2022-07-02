@@ -1,20 +1,20 @@
 
 import {  getApiOne, getApiTwo, getApiTree, getApiCGGlobal } from "./api.js";
-
-
-
-
-
-//grafica Conectada a APITwo
-export const ctx = document.getElementById("myChart").getContext("2d");
-export const myChart = async () => {
-  const dataCG = await getApiCGGlobal();
-  console.log(dataCG);
-  ////CryptoCompare
+//Coingecko
+console.log('API coingeko');
+const dataCG = await getApiCGGlobal();
+console.log(dataCG);
+////CryptoCompare
+console.log('API crytocompare');
   const dataOne = await getApiOne();
   console.log(dataOne);
   const dataDos = await getApiTwo();
   console.log(dataDos);
+//grafica Conectada a APITwo
+export const ctx = document.getElementById("myChart").getContext("2d");
+export const myChart = async () => {
+  
+  
   const dataTree = await getApiTree();
   console.log(dataTree);
   // document.getElementById("pruebaOne").innerHTML = data;
