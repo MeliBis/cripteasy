@@ -34,6 +34,9 @@ html{
     justify-content: center;
     align-items: center; 
  }
+ .section-1{
+
+}
 
  .container-box{
     width: 100%;
@@ -42,3 +45,6 @@ html{
     background-color: var(--acento);
     margin: 100px 0;
  }
+
+
+ 
