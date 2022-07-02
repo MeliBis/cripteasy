@@ -24,8 +24,11 @@ html{
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
-    margin-bottom: var(--margin-bottom);
+    margin-bottom: 30px;
+    position: relative;
+    
  }
+
  .textos-main{
     height: 500px;
     color: var(--main-color);
@@ -34,17 +37,14 @@ html{
     justify-content: center;
     align-items: center; 
  }
- .section-1{
 
-}
 
  .container-box{
     width: 100%;
     height: 100px;
-    display: flex;
     background-color: var(--acento);
     margin: 100px 0;
  }
 
 
- 
+
