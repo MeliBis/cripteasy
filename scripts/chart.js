@@ -11,6 +11,9 @@ console.log('API crytocompare');
   const dataFAPIDos = await getApiTwo();
   console.log(dataFAPIDos);
 //grafica Conectada a APITwo
+document.getElementById('cardBody');
+
+
 export const ctx = document.getElementById("myChart").getContext("2d");
 export const myChart = async () => {
   
@@ -57,3 +60,17 @@ export const myChart = async () => {
 };
 
 myChart();
+
+// let showCriptos = (criptocoin) => {
+//   criptocoin.forEach((element, index) => {
+//     let texth1 = document.createElement("tr");
+//     texth1.innerHTML = `
+//       <td>${element.id}</td>
+//       <td>${element.name}</td>
+//       <td>${element.lastName}</td>
+//       <td>${element.age}</td>
+//       <td>${element.email}</td>`;
+//     document.getElementsByTagName("tbody")[0].appendChild(texth1);
+//   });
+// };
+// showCriptos();
