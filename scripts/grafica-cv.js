@@ -1,4 +1,4 @@
-const ctx = document.getElementById('myChartApp').getContext('2d');
+export const ctx = document.getElementById('myChartApp').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'line',
     data: {
