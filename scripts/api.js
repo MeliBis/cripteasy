@@ -38,8 +38,9 @@ export const getApiTwo = async () => {
     console.log("hay un error en api Two");
   }
 };
+const moneda = "MXN";
+const apiCryptoCompare3 = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC&tsyms=USD,EUR,${moneda}`;
 
-const apiCryptoCompare3 = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC&tsyms=USD,EUR`;
 export const getApiTree =async ()=>{
  try {
     const getApiCC = await fetch(apiCryptoCompare3);

@@ -4,13 +4,14 @@ import {  getApiOne, getApiTwo, getApiTree, getApiCGGlobal } from "./api.js";
 console.log('API coingeko');
 const dataCG = await getApiCGGlobal();
 console.log(dataCG);
-////CryptoCompare
+////CryptoCompare dataCG.id
 console.log('API crytocompare');
   const dataFAPIOne = await getApiOne();
   console.log(dataFAPIOne);
   const dataFAPIDos = await getApiTwo();
   console.log(dataFAPIDos);
 //grafica Conectada a APITwo
+
 export const ctx = document.getElementById("myChart").getContext("2d");
 export const myChart = async () => {
   
