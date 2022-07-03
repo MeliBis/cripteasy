@@ -29,23 +29,23 @@ html{
     
  }
  .btn-ranking{
-    padding: 5px 55px;
+    padding: 5px 75px;
     top: 45px;
-    left: -2px;
+    left: -20px;
     z-index: 1;
 
  }
  .btn-grafica{
-    padding: 4px 48px;
+    padding: 4px 65px;
     top: 45px;
-    left: -2px;
+    left: -20px;
     z-index: 1;
 
  }
  .btn-deseos{
-    padding: 5px 26px;
+    padding: 5px 46px;
     top:46px;
-    left: -14px;
+    left: -30px;
     z-index: 1;
  }
 
