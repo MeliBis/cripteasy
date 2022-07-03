@@ -28,6 +28,26 @@ html{
     position: relative;
     
  }
+ .btn-ranking{
+    padding: 5px 55px;
+    top: 45px;
+    left: -2px;
+    z-index: 1;
+
+ }
+ .btn-grafica{
+    padding: 4px 48px;
+    top: 45px;
+    left: -2px;
+    z-index: 1;
+
+ }
+ .btn-deseos{
+    padding: 5px 26px;
+    top:46px;
+    left: -14px;
+    z-index: 1;
+ }
 
  .textos-main{
     height: 500px;
