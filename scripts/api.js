@@ -14,7 +14,12 @@ export const getApiCGGlobal = async () => {
 
 
 //CryptoCompare
-const apiCryptoCompare1 = `https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,JPY,EUR,MXN`;
+//Se agregan estas variables 
+//para los inputs 
+const valueCripto= 'BTC';
+const valueMoneda = "USD,JPY,EUR,MXN";
+
+const apiCryptoCompare1 = `https://min-api.cryptocompare.com/data/price?fsym=${valueCripto}&tsyms=${valueMoneda}`;
 export const getApiOne = async () => {
   try {
     const getApiCC = await fetch(apiCryptoCompare1);
