@@ -12,6 +12,7 @@ console.log('API crytocompare');
   console.log(dataFAPIDos);
 //grafica Conectada a APITwo
 
+
 export const ctx = document.getElementById("myChart").getContext("2d");
 export const myChart = async () => {
   
@@ -87,4 +88,5 @@ export const myChartOne = new Chart(ctxOne, {
 });
 
 myChart();
+
 
