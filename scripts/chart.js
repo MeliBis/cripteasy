@@ -4,6 +4,7 @@ import {  getApiOne, getApiTwo, getApiTree, getApiCGGlobal } from "./api.js";
 console.log('API coingeko');
 const dataCG = await getApiCGGlobal();
 console.log(dataCG);
+<<<<<<< HEAD
 console.log(dataCG[0].id, dataCG[1].id, dataCG[2].id, dataCG[3].id, dataCG[4].id);
 const bestCrioptos = ()=>{
  let prueba = document.getElementById(`bestCrip`);
@@ -17,13 +18,15 @@ const bestCrioptos = ()=>{
                   </ul>`;
 }
 ////CryptoCompare
+=======
+////CryptoCompare dataCG.id
+>>>>>>> ebd03e2b3660caf8b5a16be9bdee492843037062
 console.log('API crytocompare');
   const dataFAPIOne = await getApiOne();
   console.log(dataFAPIOne);
   const dataFAPIDos = await getApiTwo();
   console.log(dataFAPIDos);
 //grafica Conectada a APITwo
-document.getElementById('cardBody');
 
 
 export const ctx = document.getElementById("myChart").getContext("2d");
@@ -70,19 +73,36 @@ export const myChart = async () => {
     },
   });
 };
+export const ctxOne = document.getElementById("myChartApp").getContext("2d");
+export const myChartOne = new Chart(ctxOne, {
+  type: "line",
+  data: {
+    labels: [
+      "cripto1",
+      "cripto2",
+      "cripto3",
+      "cripto4",
+      "scripto5",
+      "scripto6",
+    ],
+    datasets: [
+      {
+        label: "Ranking en tiempo real",
+        data: [20, 15, 45, 26, 76, 55],
+        backgroundColor: ["#F4D22C", "#D9BA82"],
+        borderWidth: 1,
+      },
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+  },
+});
 
 myChart();
 
-// let showCriptos = (criptocoin) => {
-//   criptocoin.forEach((element, index) => {
-//     let texth1 = document.createElement("tr");
-//     texth1.innerHTML = `
-//       <td>${element.id}</td>
-//       <td>${element.name}</td>
-//       <td>${element.lastName}</td>
-//       <td>${element.age}</td>
-//       <td>${element.email}</td>`;
-//     document.getElementsByTagName("tbody")[0].appendChild(texth1);
-//   });
-// };
-// showCriptos();
+
