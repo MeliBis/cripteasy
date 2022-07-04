@@ -4,7 +4,7 @@ import {  getApiOne, getApiTwo, getApiTree, getApiCGGlobal } from "./api.js";
 console.log('API coingeko');
 const dataCG = await getApiCGGlobal();
 console.log(dataCG);
-<<<<<<< HEAD
+
 console.log(dataCG[0].id, dataCG[1].id, dataCG[2].id, dataCG[3].id, dataCG[4].id);
 const bestCrioptos = ()=>{
  let prueba = document.getElementById(`bestCrip`);
@@ -18,9 +18,9 @@ const bestCrioptos = ()=>{
                   </ul>`;
 }
 ////CryptoCompare
-=======
+
 ////CryptoCompare dataCG.id
->>>>>>> ebd03e2b3660caf8b5a16be9bdee492843037062
+
 console.log('API crytocompare');
   const dataFAPIOne = await getApiOne();
   console.log(dataFAPIOne);
