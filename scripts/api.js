@@ -56,8 +56,15 @@ export const getApiTree =async ()=>{
     console.log("hay un error en api Tree");
   }
 };
-// Seleccion del top 10 de criptomonedas
+// Seleccion del top 10 de criptomonedas - DANIEL - //
 const seleccionarCriptomonedas = document.querySelector('#criptomonedas');
+const seleccionarMoneda = document.querySelector('#moneda');
+const formulario = document.querySelector('#formulario');
+
+const objBusqueda = {
+    moneda: '',
+    criptomoneda: ''
+}
   // Creando un Promise
 const obtenerCriptomonedas = criptomonedas => new Promise( resolve => {
   resolve(criptomonedas);
@@ -65,7 +72,11 @@ const obtenerCriptomonedas = criptomonedas => new Promise( resolve => {
 
 document.addEventListener('DOMContentLoaded', () => {
   consultarCriptomonedas();
+  formulario.addEventListener('submit', submitFormulario);
+  seleccionarCriptomonedas.addEventListener('change', leerValor);
+  seleccionarMoneda.addEventListener('change', leerValor);
 })
+
 function consultarCriptomonedas(){
    const url = 'https://min-api.cryptocompare.com/data/top/mktcapfull?limit=10&tsym=USD';
    fetch(url)
@@ -83,5 +94,56 @@ function selectCriptomonedas(criptomonedas){
     option.textContent = FullName;
     seleccionarCriptomonedas.appendChild(option);
   });
+}
+
+function leerValor(e){
+  objBusqueda[e.target.name] = e.target.value;
+  console.log(objBusqueda);
+}
+
+function submitFormulario(e) {
+  e.preventDefault();
+  //Validar que los input sean seleccionados
+  const { moneda, criptomoneda } = objBusqueda;
+
+  if (moneda === '' || criptomoneda === '') {
+    mostrarAlerta('Ambos campos deben seleccionarse');
+    return;
+  }
+  // Consulta de API con resultados
+  consultarAPI();
+}
+
+function mostrarAlerta(msg){
+  const existeError = document.querySelector('.error');
+
+  if(!existeError){
+    const divMensaje = document.createElement('div');
+    divMensaje.classList.add('error');
+    //Mensaje de Error
+    divMensaje.textContent = msg;
+    formulario.appendChild(divMensaje);
+    setTimeout( ()=> {
+      divMensaje.remove();
+    },  1500);
+  }
+}
+
+function consultarAPI(){
+  const { moneda, criptomoneda } = objBusqueda;
+  const url = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${criptomoneda}&tsyms=${moneda}`;
+  fetch(url)
+    .then( respuesta => respuesta.json())
+    .then( cotizacion => {
+        mostrarCotizacionHTML(cotizacion.DISPLAY[criptomoneda][moneda]);
+    })
+}
+
+function mostrarCotizacionHTML(cotizacion){
+  const { PRICE} = cotizacion;
+  const precio = document.createElement('p');
+  precio.classList.add('precio');
+  precio.innerHTML = `El Precioes: <span>${PRICE}</span>`;
+  formulario.appendChild(precio);
 }
 
