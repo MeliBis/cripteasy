@@ -163,6 +163,37 @@
     <h3 class="m-4 d-block  ">Te ayudamos a invertir </h3>
 </div>
 <!-- ============ /seccion4 =============-->
+<section id="cotizador" class="cotizador">
+  <div class="fila">
+    <div class="columna">
+      <h1>Imagen</h1>
+    </div>
+    <div class="columna">
+      <form id="formulario">
+        <div class="fila">
+          <label>Selecciona una Moneda</label>
+            <select id="moneda" name="moneda">
+              <option value="">Elige una moneda</option>
+              <option value="USD">Dolar EEUU</option>
+              <option value="MXN">Peso Mexicano</option>
+              <option value="PEN">Sol Peruano</option>
+              <option value="EUR">Euros</option>
+            </select>
+        </div>
+        <div class="fila">
+          <div>
+            <label>Selecciona una Criptomoneda</label>
+            <select id="criptomonedas" name="criptomoneda">
+              <option value="">Elige una criptomoneda</option>
+            </select>
+          </div>
+        </div>
+        <input class="boton" type="submit" value="Cotizar" />
+        <div id="resultado" class="resultado"></div>
+      </form>
+    </div>
+  </div>
+</section>
 
 <!-- ============ seccion5 'extra'=============-->
 <section id="grafica" class="bg-brown">
@@ -224,7 +255,7 @@
         
     </div> <!-- cierre container -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script type="module"  src="main.js"></script>
+    <script type="module"  src="main.js"></script>
 
 
 
