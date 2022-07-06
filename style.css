@@ -1,7 +1,7 @@
 :root{
     --main-color: #333;
-    --acento: #F4D22C;
-    --second:#F1BF2C;
+    --acento: #d7a430;
+    --second: #F1BF2C;
     --white: #FFFFFF ;
     --margin-bottom: 80px;
 }
@@ -65,6 +65,18 @@ html{
     background-color: var(--acento);
     margin: 100px 0;
  }
+
+ .cotizador {
+   position: relative;
+   width: 100%;
+   max-width: 960px;
+   margin: 0 auto;
+   padding: 0 20px;
+   box-sizing: border-box; }
+
+ .cotizador img {
+   margin-top: 150px;
+}
 
 
 
