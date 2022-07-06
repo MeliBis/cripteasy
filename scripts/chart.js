@@ -4,13 +4,8 @@ import {  getApiOne, getApiTwo, getApiTree, getApiCGGlobal } from "./api.js";
 console.log('API coingeko');
 const dataCG = await getApiCGGlobal();
 console.log(dataCG);
-
-console.log(dataCG[0].id, dataCG[1].id, dataCG[2].id, dataCG[3].id, dataCG[4].id);
-
 ////CryptoCompare
-
 ////CryptoCompare dataCG.id
-
 console.log('API crytocompare');
   const dataFAPIOne = await getApiOne();
   console.log(dataFAPIOne);
@@ -114,7 +109,7 @@ myChart();
 (() => {
 mejoresCriptos.innerHTML = `
   <ul class="list-group">
-                    <li class="list-group-item">${dataCG[0].id.toUpperCase()}</li>
+                    <li class="list-group-item">${dataCG[0].id.toUpperCase()} <img src="" alt=""> </li>
                     <li class="list-group-item">${dataCG[1].id.toUpperCase()}</li>
                     <li class="list-group-item">${dataCG[2].id.toUpperCase()}</li>
                     <li class="list-group-item">${dataCG[3].id.toUpperCase()}</li>
