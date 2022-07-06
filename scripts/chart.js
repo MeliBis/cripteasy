@@ -4,23 +4,8 @@ import {  getApiOne, getApiTwo, getApiTree, getApiCGGlobal } from "./api.js";
 console.log('API coingeko');
 const dataCG = await getApiCGGlobal();
 console.log(dataCG);
-
-console.log(dataCG[0].id, dataCG[1].id, dataCG[2].id, dataCG[3].id, dataCG[4].id);
-const bestCrioptos = ()=>{
- let prueba = document.getElementById(`bestCrip`);
-  let listBoots =listBoots+ `
-  <ul class="list-group">
-                    <li class="list-group-item">${dataCG[0]}</li>
-                    <li class="list-group-item">${dataCG[1]}</li>
-                    <li class="list-group-item">${dataCG[2]}</li>
-                    <li class="list-group-item">${dataCG[3]}</li>
-                    <li class="list-group-item">${dataCG[4]}</li>
-                  </ul>`;
-}
 ////CryptoCompare
-
 ////CryptoCompare dataCG.id
-
 console.log('API crytocompare');
   const dataFAPIOne = await getApiOne();
   console.log(dataFAPIOne);
@@ -36,14 +21,29 @@ export const myChart = async () => {
   const dataFAPIThree = await getApiTree();
   console.log(dataFAPIThree);
   // document.getElementById("pruebaOne").innerHTML = data;
+    let propObjetoCG = "id";
   new Chart(ctx, {
+  
+
     type: "bar",
     data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: [
+        dataCG[0].id.toUpperCase(),
+        dataCG[1].id.toUpperCase(),
+        dataCG[2].id.toUpperCase(),
+        dataCG[3].id.toUpperCase(),
+        dataCG[4].id.toUpperCase(),
+      ],
       datasets: [
         {
-          label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
+          label: "Criptos Mejor pagadas",
+          data: [
+            dataCG[0].current_price,
+            dataCG[1].current_price,
+            dataCG[2].current_price,
+            dataCG[3].current_price,
+            dataCG[4].current_price,
+          ],
           backgroundColor: [
             "rgba(255, 99, 132, 0.2)",
             "rgba(54, 162, 235, 0.2)",
@@ -106,3 +106,13 @@ export const myChartOne = new Chart(ctxOne, {
 myChart();
 
 
+(() => {
+mejoresCriptos.innerHTML = `
+  <ul class="list-group">
+                    <li class="list-group-item">${dataCG[0].id.toUpperCase()} <img src="" alt=""> </li>
+                    <li class="list-group-item">${dataCG[1].id.toUpperCase()}</li>
+                    <li class="list-group-item">${dataCG[2].id.toUpperCase()}</li>
+                    <li class="list-group-item">${dataCG[3].id.toUpperCase()}</li>
+                    <li class="list-group-item">${dataCG[4].id.toUpperCase()}</li>
+                  </ul>`;
+})();
