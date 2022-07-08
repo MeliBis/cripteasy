@@ -66,17 +66,5 @@ html{
     margin: 100px 0;
  }
 
- .cotizador {
-   position: relative;
-   width: 100%;
-   max-width: 960px;
-   margin: 0 auto;
-   padding: 0 20px;
-   box-sizing: border-box; }
-
- .cotizador img {
-   margin-top: 150px;
-}
-
 
 
