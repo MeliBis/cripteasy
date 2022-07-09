@@ -57,9 +57,10 @@ export const getApiTree =async ()=>{
   }
 };
 // Seleccion del top 10 de criptomonedas - DANIEL - //
+
 const seleccionarCriptomonedas = document.querySelector('#criptomonedas');
 const seleccionarMoneda = document.querySelector('#moneda');
-const formulario = document.querySelector('#formulario');
+const formulario = document.querySelector('#cot-formulario');
 
 const objBusqueda = {
     moneda: '',
