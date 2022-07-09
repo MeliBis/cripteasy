@@ -76,7 +76,7 @@ label {
    margin-top: 1rem;
 }
 .selector {
-   width: 75%;
+   width: 100%;
    box-sizing: border-box;
 }
 .boton-ancho {
@@ -127,7 +127,7 @@ p.precio{
    height: 100%;
 }
 .cont-inferior{
-   width: 75%;
+   width: 100%;
    height: 30px;
 /*   text-align: center; */
 }
