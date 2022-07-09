@@ -60,17 +60,29 @@ html{
     margin: 100px 0;
  }
 
- .cotizador {
-   position: relative;
-   width: 100%;
-   max-width: 960px;
-   margin: 0 auto;
-   padding: 0 20px;
-   box-sizing: border-box; }
+/************ Estilos Cotizador - Daniel **********/
 
- .cotizador img {
-   margin-top: 150px;
+label {
+   color: rgb(0, 0, 0);
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 18px;
+   margin-top: 1rem;
 }
+.selector {
+   width: 75%;
+   box-sizing: border-box;
+}
+.boton-ancho {
+   width: 100%;
+   height: 40px;
+   box-sizing: border-box; }
+.boton{
+   color: rgb(0, 0, 0);
+   background-color: #d7a430;
+   border-color: #d7a430;
+}
+
 
 .centrado{
    text-align: center;
@@ -97,3 +109,53 @@ margin-top: 1em;
 .margendivs{
    margin-bottom: 10rem;
 }
+=======
+.resultado {
+   color: rgb(27, 22, 22);
+   padding-top: 5%;
+}
+.resultado h2 {
+   font-weight: bold;
+   color: rgb(138, 51, 51);
+}
+.resultado p {
+   font-size: 18px!important;
+}
+.resultado p span {
+   font-weight: bold;
+}
+p.precio{
+   font-size: 30px!important;
+}
+.cotizador{
+   padding: 0px 100px;
+   height: 75vh;
+   position: relative;
+}
+.cont-cotizador > div{
+   float: left;
+   margin: 20px;
+}
+.izq-cotizador{
+   width: 45%;
+   position: relative;
+}
+.izq-cotizador img{
+   width: 100%;
+   height: 100%;
+}
+.der-cotizador{
+   width: 45%;
+   height: 100%;
+}
+.cont-inferior{
+   width: 75%;
+   height: 30px;
+/*   text-align: center; */
+}
+.cont-inferior p{
+   text-align: justify;
+   margin: 10px 0;
+   align-items: center;
+}
+

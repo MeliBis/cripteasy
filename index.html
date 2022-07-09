@@ -160,15 +160,15 @@
 </div>
 
 <section id="cotizador" class="cotizador">
-  <div class="fila">
-    <div class="columna">
+  <div class="cont-cotizador">
+    <div class="izq-cotizador">
       <img src="./img/Criptomoneda03.jpg">
     </div>
-    <div class="columna">
-      <form id="formulario">
+    <div class="der-cotizador">
+      <form id="cot-formulario">
         <div class="fila">
           <label>Selecciona una Moneda</label>
-            <select id="moneda" name="moneda">
+            <select id="moneda" name="moneda" class=selector>
               <option value="">Elige una moneda</option>
               <option value="USD">Dolar EEUU</option>
               <option value="MXN">Peso Mexicano</option>
@@ -179,12 +179,14 @@
         <div class="fila">
           <div>
             <label>Selecciona una Criptomoneda</label>
-            <select id="criptomonedas" name="criptomoneda">
+            <select id="criptomonedas" name="criptomoneda" class="selector">
               <option value="" disabled selected>Elige una criptomoneda</option>
             </select>
           </div>
         </div>
-        <input class="boton" type="submit" value="Cotizar" />
+        <div class="cont-inferior">
+          <p><input class="boton boton-ancho" type="submit" value="Cotizar" /></p>
+        </div>
         <div id="resultado" class="resultado"></div>
       </form>
     </div>
