@@ -159,3 +159,6 @@ p.precio{
    align-items: center;
 }
 
+div#resultado {
+    margin-top: 2rem;
+}
