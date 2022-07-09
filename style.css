@@ -188,11 +188,8 @@ footer#contacto {
  */
 }
 @media (min-width: 369px) {
- 
+section.container.d-flex.justify-content-around.margendivs{
+  display: block;
 }
-.contenedorCopi {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
 }
