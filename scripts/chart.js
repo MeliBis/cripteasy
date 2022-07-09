@@ -108,8 +108,8 @@ myChart();
         <tr>
           <th class="align-middle" scope="col">#</th>
           <th class="align-middle" scope="col">Cripto</th>
-          <th class="align-middle" scope="col-g">Precio de subida</th>
-          <th class="align-middle" scope="col">Precio de Bajada</th>
+          <th class="align-middle" scope="col-g">Precio de subida($)</th>
+          <th class="align-middle" scope="col">Precio de Bajada($)</th>
           <th class="align-middle" scope="col">Imagen</th>
         </tr>
       </thead>
