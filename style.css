@@ -70,7 +70,7 @@ label {
    margin-top: 1rem;
 }
 .selector {
-   width: 75%;
+   width: 100%;
    box-sizing: border-box;
 }
 .boton-ancho {
@@ -109,7 +109,6 @@ margin-top: 1em;
 .margendivs{
    margin-bottom: 10rem;
 }
-=======
 .resultado {
    color: rgb(27, 22, 22);
    padding-top: 5%;
@@ -149,7 +148,7 @@ p.precio{
    height: 100%;
 }
 .cont-inferior{
-   width: 75%;
+   width: 100%;
    height: 30px;
 /*   text-align: center; */
 }
@@ -159,3 +158,6 @@ p.precio{
    align-items: center;
 }
 
+div#resultado {
+    margin-top: 2rem;
+}

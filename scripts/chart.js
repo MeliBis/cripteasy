@@ -2,20 +2,20 @@ import { getApiOne, getApiTwo, getApiTree, getApiCGGlobal } from "./api.js";
 //Coingecko
 console.log("API coingeko");
 const dataCG = await getApiCGGlobal();
-console.log(dataCG);
+// console.log(dataCG);
 ////CryptoCompare
 ////CryptoCompare dataCG.id
 console.log("API crytocompare");
 const dataFAPIOne = await getApiOne();
-console.log(dataFAPIOne);
+// console.log(dataFAPIOne);
 const dataFAPIDos = await getApiTwo();
-console.log(dataFAPIDos);
+// console.log(dataFAPIDos);
 //grafica Conectada a APITwo
 
 export const ctx = document.getElementById("myChart").getContext("2d");
 export const myChart = async () => {
   const dataFAPIThree = await getApiTree();
-  console.log(dataFAPIThree);
+  // console.log(dataFAPIThree);
   // document.getElementById("pruebaOne").innerHTML = data;
   let propObjetoCG = "id";
   new Chart(ctx, {
@@ -101,8 +101,9 @@ myChart();
 
 (() => {
   mejoresCriptos.innerHTML = `
+<div class="table-responsive">
  
-                    <table class="table centrado ">
+<table class="table centrado ">
   <thead>
     <tr>
       <th class="align-middle" scope="col">#</th>
@@ -149,6 +150,9 @@ myChart();
       <td><img class='imagen' src=" ${dataCG[4].image}" alt=""></li></td>
     </tr>
     
+  </table>
+</div> 
+
 </table>
                   
                   
