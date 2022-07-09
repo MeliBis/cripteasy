@@ -101,76 +101,55 @@ myChart();
 
 (() => {
   mejoresCriptos.innerHTML = `
-<div class="table-responsive">
- 
-<table class="table centrado ">
-  <thead>
-    <tr>
-      <th class="align-middle" scope="col">#</th>
-      <th class="align-middle" scope="col">Cripto</th>
-      <th class="align-middle" scope="col-g">Precio de subida</th>
-      <th class="align-middle" scope="col">Precio de Bajada</th>
-      <th class="align-middle" scope="col">Imagen</th>
-    </tr>
-  </thead>
-  <tbody class="table-group-divider">
-    <tr>
-      <th scope="row">1</th>
-      <td> ${dataCG[0].id.toUpperCase()}</td>
-      <td>${dataCG[0].high_24h}</td>
-      <td>${dataCG[0].low_24h}</td>
-      <td><img class='imagen' src=" ${dataCG[0].image}" alt=""></li></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td> ${dataCG[1].id.toUpperCase()}</td>
-      <td>${dataCG[1].high_24h}</td>
-      <td>${dataCG[1].low_24h}</td>
-      <td><img class='imagen' src=" ${dataCG[1].image}" alt=""></li></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td> ${dataCG[2].id.toUpperCase()}</td>
-      <td>${dataCG[2].high_24h}</td>
-      <td>${dataCG[2].low_24h}</td>
-      <td><img class='imagen' src=" ${dataCG[2].image}" alt=""></li></td>
-    </tr>
-    <tr>
-      <th scope="row">4</th>
-      <td> ${dataCG[3].id.toUpperCase()}</td>
-      <td>${dataCG[3].high_24h}</td>
-      <td>${dataCG[3].low_24h}</td>
-      <td><img class='imagen' src=" ${dataCG[3].image}" alt=""></li></td>
-    </tr>
-    <tr>
-      <th scope="row">5</th>
-      <td> ${dataCG[4].id.toUpperCase()}</td>
-      <td>${dataCG[4].high_24h}</td>
-      <td>${dataCG[4].low_24h}</td>
-      <td><img class='imagen' src=" ${dataCG[4].image}" alt=""></li></td>
-    </tr>
-    
-  </table>
-</div> 
 
-</table>
-                  
-                  
-                  `;
+  <div class="table-responsive">
+    <table class="table centrado ">
+      <thead>
+        <tr>
+          <th class="align-middle" scope="col">#</th>
+          <th class="align-middle" scope="col">Cripto</th>
+          <th class="align-middle" scope="col-g">Precio de subida</th>
+          <th class="align-middle" scope="col">Precio de Bajada</th>
+          <th class="align-middle" scope="col">Imagen</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr>
+          <th scope="row">1</th>
+          <td> ${dataCG[0].id.toUpperCase()}</td>
+          <td>${dataCG[0].high_24h}</td>
+          <td>${dataCG[0].low_24h}</td>
+          <td><img class='imagen' src=" ${dataCG[0].image}" alt=""></li></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td> ${dataCG[1].id.toUpperCase()}</td>
+          <td>${dataCG[1].high_24h}</td>
+          <td>${dataCG[1].low_24h}</td>
+          <td><img class='imagen' src=" ${dataCG[1].image}" alt=""></li></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td> ${dataCG[2].id.toUpperCase()}</td>
+          <td>${dataCG[2].high_24h}</td>
+          <td>${dataCG[2].low_24h}</td>
+          <td><img class='imagen' src=" ${dataCG[2].image}" alt=""></li></td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td> ${dataCG[3].id.toUpperCase()}</td>
+          <td>${dataCG[3].high_24h}</td>
+          <td>${dataCG[3].low_24h}</td>
+          <td><img class='imagen' src=" ${dataCG[3].image}" alt=""></li></td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td> ${dataCG[4].id.toUpperCase()}</td>
+          <td>${dataCG[4].high_24h}</td>
+          <td>${dataCG[4].low_24h}</td>
+          <td><img class='imagen' src=" ${dataCG[4].image}" alt=""></li></td>
+        </tr>
+        </table>
+    </div> 
+  </table> `;
 })();
-//  <li class="list-group-item">${dataCG[1].id.toUpperCase()}</li>
-//                   <li class="list-group-item">${dataCG[2].id.toUpperCase()}</li>
-//                   <li class="list-group-item">${dataCG[3].id.toUpperCase()}</li>
-//                   <li class="list-group-item">${dataCG[4].id.toUpperCase()}</li>
-{/* <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody> */}
