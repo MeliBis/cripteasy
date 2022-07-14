@@ -13,11 +13,11 @@
 html {
   scroll-behavior: smooth;
 }
-<<<<<<< HEAD
+
 a {
   text-decoration: none;
 }
-=======
+
 
 .textos-main-second{
   font-size: 20px;
@@ -34,7 +34,7 @@ a {
 }
 /* //typing */
 
->>>>>>> 3c8054f7d7f9c8db3acd1e6e5b4f8c89fe7c13de
+
 .main {
   width: 100%;
   height: 450px;
