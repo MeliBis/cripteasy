@@ -190,6 +190,10 @@ footer#contacto {
 }
 
 /* Footer */
+.contenedorCards{
+   display: flex;
+  align-items: center;
+}
 .contenedor {
   display: flex;
   justify-content: space-around;
@@ -219,7 +223,7 @@ footer#contacto {
     display: flex;
     justify-content: center;
   }
-  .contenedor_nav {
+  .contenedor_nav,.contenedorCards {
     display: flex;
     flex-direction: column;
   }
