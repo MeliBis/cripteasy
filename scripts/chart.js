@@ -17,7 +17,7 @@ export const myChart = async () => {
   const dataFAPIThree = await getApiTree();
   // console.log(dataFAPIThree);
   // document.getElementById("pruebaOne").innerHTML = data;
-  let propObjetoCG = "id";
+  // let propObjetoCG = "id";
   new Chart(ctx, {
     type: "bar",
     data: {
